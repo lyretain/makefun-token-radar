@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ashlar — implied launch value from sealed comparables</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#rows">Skip to the board</a>
+<header>
+  <div>
+    <p class="kicker">Ashlar · sealed comparable</p>
+    <h1>Token launch desk</h1>
+  </div>
+  <p id="meta" class="meta">Reading the sealed snapshot…</p>
+</header>
+<p id="method" class="method"></p>
+<form id="filters" action="#">
+  <label>Search <input id="q" type="search" placeholder="Name or slug" autocomplete="off"></label>
+  <label>Category <select id="cat"><option value="">All categories</option></select></label>
+  <label>Chain <select id="chain"><option value="">All chains</option></select></label>
+  <label class="check"><input id="watch" type="checkbox"> Watchlist only</label>
+  <label class="check"><input id="gap" type="checkbox"> Above floor, off list</label>
+  <button type="button" id="clear">Clear</button>
+</form>
+<p id="count" class="count"></p>
+<div class="layout">
+  <div class="sheet" id="rows" tabindex="-1"></div>
+  <aside id="detail" class="detail" hidden></aside>
+</div>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
